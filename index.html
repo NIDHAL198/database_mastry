@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>DataMastery - Learn Database Concepts</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+   <link rel="stylesheet" href="./style.css">
+   <script src="./main.js" defer></script>
+</head>
+<body>
+   <header>
+      <div class="container">
+         <nav class="navbar">
+            <div class="logo">
+               <i class="fas fa-database" style="color: var(--primary); font-size: 1.8rem;"></i>
+               <h1>Data<span>Mastery</span></h1>
+            </div>
+            <div class="menu-toggle">
+               <span></span>
+               <span></span>
+               <span></span>
+            </div>
+            <ul class="nav-links">
+               <li><a href="index.html">Home</a></li>
+               <li><a href="#features">Features</a></li>
+               <li><a href="#learning-paths">Learn</a></li>
+               <li><a href="#about">About</a></li>
+            </ul>
+         </nav>
+      </div>
+   </header>
+
+   <section class="hero">
+      <div class="floating-dbs">
+         <i class="fas fa-database db-icon" id="db1"></i>
+         <i class="fas fa-server db-icon" id="db2"></i>
+         <i class="fas fa-database db-icon" id="db3"></i>
+      </div>
+      <div class="container">
+         <div class="hero-content">
+            <h1>Master Database Concepts</h1>
+            <p>A comprehensive learning platform designed for computer science students and professionals to deepen their understanding of database systems from conceptual modeling to security implementation.</p>
+            <div class="cta-buttons">
+               <a href="#learning-paths" class="btn">Start Learning</a>
+               <a href="#about" class="btn btn-outlined">About the Author</a>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="features" id="features">
+      <div class="container">
+         <div class="section-header">
+            <h2>Why Learn With Us</h2>
+            <p>DataMastery provides a structured approach to understanding database systems with practical examples and interactive content.</p>
+         </div>
+         <div class="features-grid">
+            <div class="feature-card">
+               <div class="feature-icon">
+                  <i class="fas fa-graduation-cap"></i>
+               </div>
+               <h3>Structured Learning</h3>
+               <p>Progress through carefully designed learning paths that build on each other from foundational concepts to advanced techniques.</p>
+            </div>
+            <div class="feature-card">
+               <div class="feature-icon">
+                  <i class="fas fa-code"></i>
+               </div>
+               <h3>Practical Examples</h3>
+               <p>Apply theoretical knowledge with hands-on examples and interactive exercises that reinforce your understanding.</p>
+            </div>
+            <div class="feature-card">
+               <div class="feature-icon">
+                  <i class="fas fa-shield-alt"></i>
+               </div>
+               <h3>Security Focus</h3>
+               <p>Learn database concepts with a security-first mindset, preparing you for the challenges of modern data protection.</p>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="learning-paths" id="learning-paths">
+      <div class="container">
+         <div class="section-header">
+            <h2>Learning Paths</h2>
+            <p>Choose your learning journey from conceptual database design to advanced security implementation.</p>
+         </div>
+         <div class="paths-container">
+            <div class="path-card fade-in">
+               <div class="path-image" style="background-color: var(--primary);">
+                  <i class="fas fa-sitemap"></i>
+               </div>
+               <div class="path-content">
+                  <div class="level-indicator">
+                     <div class="level-dot active"></div>
+                     <div class="level-dot active"></div>
+                     <div class="level-dot"></div>
+                     <div class="level-dot"></div>
+                     <div class="level-dot"></div>
+                  </div>
+                  <h3>Entity Relationship Model</h3>
+                  <p>Learn the fundamentals of ER modeling and how to transform these models into relational schemas.</p>
+                  <a href="ER_model.html" class="btn">Start Learning</a>
+               </div>
+            </div>
+               
+            <div class="path-card fade-in">
+               <div class="path-image" style="background-color: var(--secondary);">
+                  <i class="fas fa-table"></i>
+               </div>
+               <div class="path-content">
+                  <div class="level-indicator">
+                     <div class="level-dot active"></div>
+                     <div class="level-dot active"></div>
+                     <div class="level-dot active"></div>
+                     <div class="level-dot"></div>
+                     <div class="level-dot"></div>
+                  </div>
+                  <h3>Relational Model</h3>
+                  <p>Master relational database theory, normalization and effective schema design principles.</p>
+                  <a href="relational-model.html" class="btn">Start Learning</a>
+               </div>
+            </div>
+               
+            <div class="path-card fade-in">
+               <div class="path-image" style="background-color: #8b5cf6;">
+                  <i class="fas fa-server"></i>
+               </div>
+               <div class="path-content">
+                  <div class="level-indicator">
+                     <div class="level-dot active"></div>
+                     <div class="level-dot active"></div>
+                     <div class="level-dot active"></div>
+                     <div class="level-dot active"></div>
+                     <div class="level-dot"></div>
+                  </div>
+                  <h3>Physical Model</h3>
+                  <p>Explore MySQL database implementation, storage structures, and performance optimization.</p>
+                  <a href="physical-model.html" class="btn">Start Learning</a>
+               </div>
+            </div>
+               
+            <div class="path-card fade-in">
+               <div class="path-image" style="background-color: #ec4899;">
+                  <i class="fas fa-code"></i>
+               </div>
+               <div class="path-content">
+                  <div class="level-indicator">
+                     <div class="level-dot active"></div>
+                     <div class="level-dot active"></div>
+                     <div class="level-dot active"></div>
+                     <div class="level-dot active"></div>
+                     <div class="level-dot active"></div>
+                  </div>
+                  <h3>Advanced SQL</h3>
+                  <p>Go beyond basic SQL with advanced queries, stored procedures, triggers, and optimizations.</p>
+                  <a href="advanced-sql.html" class="btn">Start Learning</a>
+               </div>
+            </div>
+               
+            <div class="path-card fade-in">
+               <div class="path-image" style="background-color: #f59e0b;">
+                  <i class="fas fa-network-wired"></i>
+               </div>
+               <div class="path-content">
+                  <div class="level-indicator">
+                     <div class="level-dot active"></div>
+                     <div class="level-dot active"></div>
+                     <div class="level-dot active"></div>
+                     <div class="level-dot active"></div>
+                     <div class="level-dot active"></div>
+                  </div>
+                  <h3>Distributed Databases</h3>
+                  <p>Understand the principles and challenges of distributed database systems and replication.</p>
+                  <a href="distributed-db.html" class="btn">Start Learning</a>
+               </div>
+            </div>
+               
+            <div class="path-card fade-in">
+               <div class="path-image" style="background-color: #10b981;">
+                  <i class="fas fa-user-lock"></i>
+               </div>
+               <div class="path-content">
+                  <div class="level-indicator">
+                     <div class="level-dot active"></div>
+                     <div class="level-dot active"></div>
+                     <div class="level-dot active"></div>
+                     <div class="level-dot active"></div>
+                     <div class="level-dot active"></div>
+                  </div>
+                  <h3>Access Control</h3>
+                  <p>Learn database access control mechanisms, user privileges, and role-based security models.</p>
+                  <a href="access-control.html" class="btn">Start Learning</a>
+               </div>
+            </div>
+               
+            <div class="path-card fade-in">
+               <div class="path-image" style="background-color: #ef4444;">
+                  <i class="fas fa-shield-alt"></i>
+               </div>
+               <div class="path-content">
+                  <div class="level-indicator">
+                     <div class="level-dot active"></div>
+                     <div class="level-dot active"></div>
+                     <div class="level-dot active"></div>
+                     <div class="level-dot active"></div>
+                     <div class="level-dot active"></div>
+                  </div>
+                  <h3>Database Security</h3>
+                  <p>Master essential database security concepts, encryption, and protection against common attacks.</p>
+                  <a href="db-security.html" class="btn">Start Learning</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="about" id="about">
+      <div class="container">
+         <div class="about-content">
+            <div class="about-image fade-in">
+               <img src="./src/aboutus.jpg" alt="Profile Photo">
+            </div>
+            <div class="about-text fade-in">
+               <h2>About Me</h2>
+               <p>Hello! I'm Nidhal Lahessane, an Information Security Engineer passionate about helping Computer Science students and the IT community develop their skills and knowledge.</p>
+               <p>With expertise in database systems and information security, I've created this platform to provide structured, comprehensive learning resources that bridge theoretical concepts with practical applications.</p>
+               <p>My goal is to make complex database concepts accessible and help you build the skills needed for modern data-driven applications while maintaining security best practices.</p>
+               <div class="social-links">
+                  <a href="https://www.facebook.com/nidal.lhassan/" class="social-link" target="_blank">
+                     <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/in/nidhal-lahessane-8ba0a6296/" class="social-link" target="_blank">
+                     <i class="fab fa-linkedin-in"></i>
+                  </a>
+                  <a href="https://github.com/NIDHAL198" class="social-link" target="_blank">
+                     <i class="fab fa-github"></i>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <footer>
+         <div class="copyright">
+            <p>&copy; 2025 DataMastery. Created by Nidhal Lahessane. All rights reserved.</p>
+         </div>
+   </footer>
+</body>
+</html>

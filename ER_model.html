@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Entity Relationship Model - DataMastery</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+   <link rel="stylesheet" href="./style.css">
+   <script src="./main.js" defer></script>
+</head>
+<body>
+   <header>
+      <div class="container">
+         <nav class="navbar">
+            <div class="logo">
+               <i class="fas fa-database" style="color: var(--primary); font-size: 1.8rem;"></i>
+               <h1>Data<span>Mastery</span></h1>
+            </div>
+            <div class="menu-toggle">
+               <span></span>
+               <span></span>
+               <span></span>
+            </div>
+            <ul class="nav-links">
+               <li><a href="index.html">Home</a></li>
+               <li><a href="index.html#features">Features</a></li>
+               <li><a href="index.html#learning-paths">Learn</a></li>
+               <li><a href="index.html#about">About</a></li>
+            </ul>
+         </nav>
+      </div>
+   </header>
+
+   <section class="course-hero">
+      <div class="container">
+         <div class="course-hero-content">
+            <h1>Entity Relationship Model</h1>
+            <p>Master the foundational concepts of database design with Entity Relationship modeling</p>
+            <div class="course-info">
+               <div class="course-info-item">
+                  <i class="fas fa-book"></i>
+                  <span>5 Lessons</span>
+               </div>
+               <div class="course-info-item">
+                  <i class="fas fa-clock"></i>
+                  <span>3 Hours</span>
+               </div>
+               <div class="course-info-item">
+                  <i class="fas fa-signal"></i>
+                  <span>Beginner</span>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="course-navigation">
+      <div class="container">
+         <div class="course-nav-container">
+            <a href="#lesson1" class="course-nav-item active" data-lesson="lesson1">
+               <div class="lesson-number">1</div>
+               <div class="lesson-info">
+                  <h3>Introduction</h3>
+                  <p>ER modeling basics</p>
+               </div>
+            </a>
+            <a href="#lesson2" class="course-nav-item" data-lesson="lesson2">
+               <div class="lesson-number">2</div>
+               <div class="lesson-info">
+                  <h3>Entities & Attributes</h3>
+                  <p>Core components</p>
+               </div>
+            </a>
+            <a href="#lesson3" class="course-nav-item" data-lesson="lesson3">
+               <div class="lesson-number">3</div>
+               <div class="lesson-info">
+                  <h3>Relationships</h3>
+                  <p>Connecting entities</p>
+               </div>
+            </a>
+            <a href="#lesson4" class="course-nav-item" data-lesson="lesson4">
+               <div class="lesson-number">4</div>
+               <div class="lesson-info">
+                  <h3>Advanced Concepts</h3>
+                  <p>Extended ER features</p>
+               </div>
+            </a>
+            <a href="#lesson5" class="course-nav-item" data-lesson="lesson5">
+               <div class="lesson-number">5</div>
+               <div class="lesson-info">
+                  <h3>ER to Relational</h3>
+                  <p>Transformation rules</p>
+               </div>
+            </a>
+         </div>
+      </div>
+   </section>
+
+   <section class="course-content">
+      <div class="container">
+         <!-- Lesson 1: Introduction -->
+         <div class="lesson active" id="lesson1">
+            <div class="lesson-header">
+               <h2>Introduction to ER Models</h2>
+               <div class="progress-container">
+                  <div class="progress-bar">
+                     <div class="progress" style="width: 20%;"></div>
+                  </div>
+                  <span>Lesson 1 of 5</span>
+               </div>
+            </div>
+            
+            <div class="lesson-section">
+               <h3>What is an Entity-Relationship Model?</h3>
+               <p>The Entity-Relationship (ER) model is a high-level conceptual data model that helps database designers plan the structure and relationships of data before implementation. Developed by Peter Chen in 1976, it provides a graphical representation of real-world entities and their relationships.</p>
+               
+               <div class="note-box">
+                  <p><strong>Note:</strong> ER modeling is typically the first step in database design, performed before deciding on specific database technologies or implementation details.</p>
+               </div>
+               
+               <div class="image-container fade-in">
+                  <img src="src/example.png" alt="ER Diagram Example">
+                  <p class="image-caption">Example of a basic ER diagram showing entities and relationships</p>
+               </div>
+            </div>
+            
+            <div class="lesson-section">
+               <h3>Core Components</h3>
+               <p>The ER model consists of three basic concepts:</p>
+               <ul>
+                  <li><strong>Entities:</strong> Objects or concepts in the real world that are represented in the database</li>
+                  <li><strong>Attributes:</strong> Properties or characteristics of entities</li>
+                  <li><strong>Relationships:</strong> Associations between entities</li>
+               </ul>
+               
+               <div class="example-box">
+                  <h4>Example</h4>
+                  <p>In a university database:</p>
+                  <ul>
+                     <li><strong>Entities:</strong> Student, Course, Professor</li>
+                     <li><strong>Attributes:</strong> Student (ID, Name, Address), Course (Code, Title, Credits)</li>
+                     <li><strong>Relationships:</strong> Student enrolls in Course, Professor teaches Course</li>
+                  </ul>
+               </div>
+            </div>
+            
+            <div class="lesson-section">
+               <h3>Why Use ER Modeling?</h3>
+               <p>ER modeling offers several benefits for database design:</p>
+               <ul>
+                  <li>Provides a clear visual representation of data structures</li>
+                  <li>Facilitates communication between stakeholders and technical teams</li>
+                  <li>Helps identify potential issues before implementation</li>
+                  <li>Creates a blueprint for database implementation</li>
+                  <li>Makes complex data relationships easier to understand</li>
+               </ul>
+            </div>
+            
+            <div class="quiz-container fade-in">
+               <h3>Quick Check</h3>
+               <div class="quiz-question">
+                  <p>Which of the following is NOT a basic component of the ER model?</p>
+                  <ul class="quiz-options">
+                     <li>
+                        <label>
+                           <input type="radio" name="q1" value="a">
+                           Entities
+                        </label>
+                     </li>
+                     <li>
+                        <label>
+                           <input type="radio" name="q1" value="b">
+                           Attributes
+                        </label>
+                     </li>
+                     <li>
+                        <label>
+                           <input type="radio" name="q1" value="c">
+                           Relationships
+                        </label>
+                     </li>
+                     <li>
+                        <label>
+                           <input type="radio" name="q1" value="d">
+                           Tables
+                        </label>
+                     </li>
+                  </ul>
+                  <div class="quiz-feedback"></div>
+               </div>
+            </div>
+            
+            <div class="lesson-nav">
+               <button class="lesson-nav-btn disabled">
+                  <i class="fas fa-arrow-left"></i>
+                  Previous Lesson
+               </button>
+               <button class="lesson-nav-btn next" data-next="lesson2">
+                  Next Lesson
+                  <i class="fas fa-arrow-right"></i>
+               </button>
+            </div>
+         </div>
+         
+         <!-- Lesson 2: Entities & Attributes -->
+         <div class="lesson" id="lesson2">
+            <div class="lesson-header">
+               <h2>Entities & Attributes</h2>
+               <div class="progress-container">
+                  <div class="progress-bar">
+                     <div class="progress" style="width: 40%;"></div>
+                  </div>
+                  <span>Lesson 2 of 5</span>
+               </div>
+            </div>
+            
+            <div class="lesson-section">
+               <h3>Understanding Entities</h3>
+               <p>An entity is an object or concept that exists in the real world and can be distinctly identified. In database terms, an entity is typically represented as a table when transformed into a relational model.</p>
+               
+               <h4>Types of Entities</h4>
+               <ul>
+                  <li><strong>Strong Entity:</strong> Can exist independently of other entity types</li>
+                  <li><strong>Weak Entity:</strong> Depends on another entity type for its existence</li>
+               </ul>
+               
+               <div class="image-container fade-in">
+                  <img src="./src/Strong-Entity-Vs-Weak-Entity.jpg" alt="Strong vs Weak Entities">
+                  <p class="image-caption">Strong entity (Student) vs Weak entity (Dependent)</p>
+               </div>
+            </div>
+            
+            <div class="lesson-section">
+               <h3>Understanding Attributes</h3>
+               <p>Attributes are properties or characteristics that describe an entity. They provide details about an entity and are represented as columns in relational tables.</p>
+               
+               <h4>Types of Attributes</h4>
+               <div class="attributes-grid">
+                  <div class="attribute-card fade-in">
+                     <div class="attribute-icon">
+                        <i class="fas fa-key"></i>
+                     </div>
+                     <h4>Simple</h4>
+                     <p>Cannot be divided further (e.g., StudentID)</p>
+                  </div>
+                  <div class="attribute-card fade-in">
+                     <div class="attribute-icon">
+                        <i class="fas fa-layer-group"></i>
+                     </div>
+                     <h4>Composite</h4>
+                     <p>Can be divided into smaller parts (e.g., Address)</p>
+                  </div>
+                  <div class="attribute-card fade-in">
+                     <div class="attribute-icon">
+                        <i class="fas fa-list-ol"></i>
+                     </div>
+                     <h4>Single-valued</h4>
+                     <p>Contains only one value (e.g., Birthday)</p>
+                  </div>
+                  <div class="attribute-card fade-in">
+                     <div class="attribute-icon">
+                        <i class="fas fa-th"></i>
+                     </div>
+                     <h4>Multi-valued</h4>
+                     <p>Contains multiple values (e.g., PhoneNumbers)</p>
+                  </div>
+                  <div class="attribute-card fade-in">
+                     <div class="attribute-icon">
+                        <i class="fas fa-calculator"></i>
+                     </div>
+                     <h4>Derived</h4>
+                     <p>Value calculated from other attributes (e.g., Age from Birthdate)</p>
+                  </div>
+                  <div class="attribute-card fade-in">
+                     <div class="attribute-icon">
+                        <i class="fas fa-fingerprint"></i>
+                     </div>
+                     <h4>Key</h4>
+                     <p>Uniquely identifies an entity instance (e.g., StudentID)</p>
+                  </div>
+               </div>
+            </div>
+            
+            <div class="example-box">
+               <h4>Entity and Attribute Example</h4>
+               <p>Consider a <strong>Student</strong> entity with attributes:</p>
+               <ul>
+                  <li><strong>StudentID</strong> (Simple, Key)</li>
+                  <li><strong>Name</strong> (Composite: FirstName, LastName)</li>
+                  <li><strong>Address</strong> (Composite: Street, City, State, ZipCode)</li>
+                  <li><strong>PhoneNumbers</strong> (Multi-valued)</li>
+                  <li><strong>BirthDate</strong> (Simple)</li>
+                  <li><strong>Age</strong> (Derived from BirthDate)</li>
+               </ul>
+               <div class="image-container">
+                  <img src="./src/etd_attr.png" alt="Student Entity with Attributes">
+                  <p class="image-caption">Visual representation of a Student entity with attributes</p>
+               </div>
+            </div>
+            
+            <div class="interactive-exercise fade-in">
+               <h3>Practice Exercise</h3>
+               <p>Identify the type of each attribute for the following Product entity:</p>
+               <form class="attribute-exercise">
+                  <div class="exercise-item">
+                     <p>ProductID (unique identifier)</p>
+                     <select class="exercise-select" data-answer="key">
+                        <option value="">Select type...</option>
+                        <option value="simple">Simple</option>
+                        <option value="composite">Composite</option>
+                        <option value="multivalued">Multi-valued</option>
+                        <option value="derived">Derived</option>
+                        <option value="key">Key</option>
+                     </select>
+                     <span class="feedback"></span>
+                  </div>
+                  <div class="exercise-item">
+                     <p>ProductDimensions (height, width, depth)</p>
+                     <select class="exercise-select" data-answer="composite">
+                        <option value="">Select type...</option>
+                        <option value="simple">Simple</option>
+                        <option value="composite">Composite</option>
+                        <option value="multivalued">Multi-valued</option>
+                        <option value="derived">Derived</option>
+                        <option value="key">Key</option>
+                     </select>
+                     <span class="feedback"></span>
+                  </div>
+                  <div class="exercise-item">
+                     <p>Colors (red, blue, green, etc.)</p>
+                     <select class="exercise-select" data-answer="multivalued">
+                        <option value="">Select type...</option>
+                        <option value="simple">Simple</option>
+                        <option value="composite">Composite</option>
+                        <option value="multivalued">Multi-valued</option>
+                        <option value="derived">Derived</option>
+                        <option value="key">Key</option>
+                     </select>
+                     <span class="feedback"></span>
+                  </div>
+                  <div class="exercise-item">
+                     <p>TotalValue (price × quantity)</p>
+                     <select class="exercise-select" data-answer="derived">
+                        <option value="">Select type...</option>
+                        <option value="simple">Simple</option>
+                        <option value="composite">Composite</option>
+                        <option value="multivalued">Multi-valued</option>
+                        <option value="derived">Derived</option>
+                        <option value="key">Key</option>
+                     </select>
+                     <span class="feedback"></span>
+                  </div>
+                  <button type="button" class="btn check-answers">Check Answers</button>
+               </form>
+            </div>
+            
+            <div class="lesson-nav">
+               <button class="lesson-nav-btn" data-next="lesson1">
+                  <i class="fas fa-arrow-left"></i>
+                  Previous Lesson
+               </button>
+               <button class="lesson-nav-btn next" data-next="lesson3">
+                  Next Lesson
+                  <i class="fas fa-arrow-right"></i>
+               </button>
+            </div>
+         </div>
+         
+         <!-- Lesson 3: Relationships -->
+         <div class="lesson" id="lesson3">
+            <div class="lesson-header">
+               <h2>Relationships</h2>
+               <div class="progress-container">
+                  <div class="progress-bar">
+                     <div class="progress" style="width: 60%;"></div>
+                  </div>
+                  <span>Lesson 3 of 5</span>
+               </div>
+            </div>
+            
+            <div class="lesson-section">
+               <h3>Understanding Relationships</h3>
+               <p>Relationships represent associations between entities. They show how entities interact with each other and are a crucial part of database design. Relationships are typically represented as lines connecting entity boxes in ER diagrams.</p>
+               
+               <div class="image-container fade-in">
+                  <img src="./src/ensii_clas_cou.png" alt="Relationship Example">
+                  <p class="image-caption">Example of relationships between Class, Course, and Professor entities</p>
+               </div>
+            </div>
+            
+            <div class="lesson-section">
+               <h3>Relationship Cardinality</h3>
+               <p>Cardinality defines how many instances of an entity relate to one instance of another entity. There are three main types:</p>
+               
+               <div class="relationship-types">
+                  <div class="relationship-card fade-in">
+                     <h4>One-to-One (1:1)</h4>
+                     <div class="relationship-diagram">
+                        <div class="entity">Entity A</div>
+                        <div class="relationship-line">
+                           <span>1</span>
+                           <hr>
+                           <span>1</span>
+                        </div>
+                        <div class="entity">Entity B</div>
+                     </div>
+                     <p>One instance of Entity A is associated with exactly one instance of Entity B, and vice versa.</p>
+                     <p><strong>Example:</strong> Person and Passport (one person has exactly one passport, and one passport belongs to exactly one person)</p>
+                  </div>
+                  
+                  <div class="relationship-card fade-in">
+                     <h4>One-to-Many (1:N)</h4>
+                     <div class="relationship-diagram">
+                        <div class="entity">Entity A</div>
+                        <div class="relationship-line">
+                           <span>1</span>
+                           <hr>
+                           <span>N</span>
+                        </div>
+                        <div class="entity">Entity B</div>
+                     </div>
+                     <p>One instance of Entity A is associated with multiple instances of Entity B, but one instance of Entity B is associated with only one instance of Entity A.</p>
+                     <p><strong>Example:</strong> Department and Employee (one department has many employees, but each employee belongs to only one department)</p>
+                  </div>
+                  
+                  <div class="relationship-card fade-in">
+                     <h4>Many-to-Many (M:N)</h4>
+                     <div class="relationship-diagram">
+                        <div class="entity">Entity A</div>
+                        <div class="relationship-line">
+                           <span>M</span>
+                           <hr>
+                           <span>N</span>
+                        </div>
+                        <div class="entity">Entity B</div>
+                     </div>
+                     <p>One instance of Entity A is associated with multiple instances of Entity B, and one instance of Entity B is associated with multiple instances of Entity A.</p>
+                     <p><strong>Example:</strong> Student and Course (one student can enroll in many courses, and one course can have many students)</p>
+                  </div>
+               </div>
+            </div>
+            
+            <div class="lesson-section">
+               <h3>Relationship Attributes</h3>
+               <p>Sometimes, relationships themselves can have attributes. These attributes describe properties of the relationship rather than the entities involved.</p>
+               
+               <div class="example-box">
+                  <h4>Example: Student Enrolls in Course</h4>
+                  <p>Consider a many-to-many relationship between Student and Course entities. The relationship "Enrolls" might have the following attributes:</p>
+                  <ul>
+                     <li><strong>EnrollmentDate:</strong> When the student enrolled in the course</li>
+                     <li><strong>Grade:</strong> The student's grade in the course</li>
+                     <li><strong>AttendanceRate:</strong> The student's attendance percentage</li>
+                  </ul>
+                  <div class="image-container">
+                     <img src="/src/std_grad.png" alt="Relationship Attributes">
+                     <p class="image-caption">Relationship with attributes between Student and Course entities</p>
+                  </div>
+               </div>
+            </div>
+            
+            <div class="quiz-container fade-in">
+               <h3>Relationship Challenge</h3>
+               <div class="quiz-question">
+                  <p>Which type of relationship would be most appropriate for Doctor and Patient entities in a hospital system where doctors can have many patients and patients can be treated by multiple doctors?</p>
+                  <ul class="quiz-options">
+                     <li>
+                        <label>
+                           <input type="radio" name="q2" value="a">
+                           One-to-One (1:1)
+                        </label>
+                     </li>
+                     <li>
+                        <label>
+                           <input type="radio" name="q2" value="b">
+                           One-to-Many (1:N)
+                        </label>
+                     </li>
+                     <li>
+                        <label>
+                           <input type="radio" name="q2" value="c">
+                           Many-to-One (N:1)
+                        </label>
+                     </li>
+                     <li>
+                        <label>
+                           <input type="radio" name="q2" value="d">
+                           Many-to-Many (M:N)
+                        </label>
+                     </li>
+                  </ul>
+                  <div class="quiz-feedback"></div>
+               </div>
+            </div>
+            
+            <div class="challenge-section fade-in">
+               <h3>ER Diagram Challenge</h3>
+               <p>Draw an ER diagram for the following scenario:</p>
+               <div class="challenge-description">
+                  <p>A library system needs to track books, authors, and borrowers. Books can have multiple authors, and authors can write multiple books. Borrowers can check out multiple books, but each book can only be checked out by one borrower at a time. The system needs to track when books are checked out and returned.</p>
+               </div>
+               <button class="btn show-solution">Show Solution</button>
+               <div class="solution-container" style="display: none;">
+                  <div class="image-container">
+                     <img src="/api/placeholder/600/400" alt="Library ER Diagram Solution">
+                     <p class="image-caption">Solution: Library System ER Diagram</p>
+                  </div>
+                  <ul>
+                     <li><strong>Entities:</strong> Book, Author, Borrower</li>
+                     <li><strong>Relationships:</strong> Writes (M:N between Author and Book), Borrows (1:N between Borrower and Book)</li>
+                     <li><strong>Attributes for Book:</strong> BookID (Key), Title, ISBN, PublicationYear</li>
+                     <li><strong>Attributes for Author:</strong> AuthorID (Key), Name, Nationality</li>
+                     <li><strong>Attributes for Borrower:</strong> BorrowerID (Key), Name, Address, Phone</li>
+                     <li><strong>Attributes for Borrows relationship:</strong> CheckoutDate, DueDate, ReturnDate</li>
+                  </ul>
+               </div>
+            </div>
+            
+            <div class="lesson-nav">
+               <button class="lesson-nav-btn" data-next="lesson2">
+                  <i class="fas fa-arrow-left"></i>
+                  Previous Lesson
+               </button>
+               <button class="lesson-nav-btn next" data-next="lesson4">
+                  Next Lesson
+                  <i class="fas fa-arrow-right"></i>
+               </button>
+            </div>
+         </div>
+         
+         <!-- Lesson 4: Advanced Concepts -->
+         <div class="lesson" id="lesson4">
+            <div class="lesson-header">
+               <h2>Advanced ER Concepts</h2>
+               <div class="progress-container">
+                  <div class="progress-bar">
+                     <div class="progress" style="width: 80%;"></div>
+                  </div>
+                  <span>Lesson 4 of 5</span>
+               </div>
+            </div>
+            
+            <div class="lesson-section">
+               <h3>Participation Constraints</h3>
+               <p>Participation constraints specify whether all or only some entity instances participate in a relationship.</p>
+               
+               <div class="concept-types">
+                  <div class="concept-card fade-in">
+                     <h4>Total Participation</h4>
+                     <p>Every instance of the entity must participate in the relationship. Represented by a double line in ER diagrams.</p>
+                     <div class="image-container">
+                        <img src="/api/placeholder/300/150" alt="Total Participation">
+                        <p class="image-caption">Total participation (double line) from Order to Customer</p>
+                     </div>
+                     <p><strong>Example:</strong> Every Order must be associated with a Customer (an order cannot exist without a customer).</p>
+                  </div>
+                  
+                  <div class="concept-card fade-in">
+                     <h4>Partial Participation</h4>
+                     <p>Some instances of the entity may participate in the relationship, but not all. Represented by a single line in ER diagrams.</p>
+                     <div class="image-container">
+                        <img src="/api/placeholder/300/150" alt="Partial Participation">
+                        <p class="image-caption">Partial participation (single line) from Customer to Order</p>
+                     </div>
+                     <p><strong>Example:</strong> Not every Customer must have placed an Order (a customer can exist without having placed any orders).</p>
+                  </div>
+               </div>
+            </div>
+            
+            <div class="lesson-section">
+               <h3>Specialization and Generalization</h3>
+               <p>These concepts help to model hierarchical relationships between entity types.</p>
+               
+               <div class="concept-types">
+                  <div class="concept-card fade-in">
+                     <h4>Specialization</h4>
+                     <p>The process of defining subsets of an entity type that have distinctive attributes or relationships.</p>
+                     <div class="image-container">
+                        <img src="/api/placeholder/300/200" alt="Specialization">
+                        <p class="image-caption">Specialization: Vehicle → Car, Truck, Motorcycle</p>
+                     </div>
+                     <p><strong>Example:</strong> Vehicle can be specialized into Car, Truck, and Motorcycle, each with specific attributes.</p>
+                  </div>
+                  
+                  <div class="concept-card fade-in">
+                     <h4>Generalization</h4>
+                     <p>The reverse process of abstraction, where similar entities are generalized into a higher-level entity type.</p>
+                     <div class="image-container">
+                        <img src="/api/placeholder/300/200" alt="Generalization">
+                        <p class="image-caption">Generalization: Savings Account, Checking Account → Bank Account</p>
+                     </div>
+                     <p><strong>Example:</strong> Savings Account and Checking Account can be generalized into Bank Account.</p>
+                  </div>
+               </div>
+            </div>
+            
+            <div class="lesson-section">
+               <h3>Inheritance</h3>
+               <p>Inheritance in ER modeling allows subclass entities to inherit attributes and relationships from their superclass.</p>
+               
+               <div class="image-container fade-in">
+                  <img src="/api/placeholder/600/300" alt="Inheritance Example">
+                  <p class="image-caption">Person entity with Employee and Customer as subclasses</p>
+               </div>
+               
+               <p>In the example above:</p>
+               <ul>
+                  <li>Person is the superclass with attributes like PersonID, Name, and Address</li>
+                  <li>Employee is a subclass with additional attributes like EmployeeID, Salary, and Department</li>
+                  <li>Customer is a subclass with additional attributes like CustomerID, CreditLimit, and CustomerType</li>
+                  <li>Both Employee and Customer inherit the attributes of Person</li>
+               </ul>
+            </div>
+            
+            <div class="lesson-section">
+               <h3>Aggregation</h3>
+               <p>Aggregation represents a "part-of" relationship where an entity is made up of component entities but those components can exist independently.</p>
+               
+               <div class="image-container fade-in">
+                  <img src="/api/placeholder/600/300" alt="Aggregation Example">
+                  <p class="image-caption">Aggregation: Department consists of Employees</p>
+               </div>
+               
+               <p><strong>Example:</strong> A Department consists of multiple Employees, but Employees can exist independently of the Department.</p>
+            </div>
+            
+            <div class="interactive-exercise fade-in">
+               <h3>Advanced Concepts Quiz</h3>
+               <form class="advanced-quiz">
+                  <div class="quiz-question">
+                     <p>Which symbol represents total participation in an ER diagram?</p>
+                     <ul class="quiz-options">
+                        <li>
+                           <label>
+                              <input type="radio" name="q3" value="a">
+                              Single line
+                           </label>
+                        </li>
+                        <li>
+                           <label>
+                              <input type="radio" name="q3" value="b">
+                              Double line
+                           </label>
+                        </li>
+                        <li>
+                           <label>
+                              <input type="radio" name="q3" value="c">
+                              Dotted line
+                           </label>
+                        </li>
+                        <li>
+                           <label>
+                              <input type="radio" name="q3" value="d">
+                              Arrow
+                           </label>
+                        </li>
+                     </ul>
+                  </div>
+                  
+                  <div class="quiz-question">
+                     <p>In the following scenario, which concept is being demonstrated? "A University has many Departments, each Department has many Professors, and we need to model the relationship between University and Professor."</p>
+                     <ul class="quiz-options">
+                        <li>
+                           <label>
+                              <input type="radio" name="q<!-- Continuation of Lesson 4's quiz question -->
+<div class="quiz-question">
+   <p>In the following scenario, which concept is being demonstrated? "A University has many Departments, each Department has many Professors, and we need to model the relationship between University and Professor."</p>
+   <ul class="quiz-options">
+      <li>
+         <label>
+            <input type="radio" name="q4" value="a">
+            Aggregation
+         </label>
+      </li>
+      <li>
+         <label>
+            <input type="radio" name="q4" value="b">
+            Specialization
+         </label>
+      </li>
+      <li>
+         <label>
+            <input type="radio" name="q4" value="c">
+            Weak Entity
+         </label>
+      </li>
+      <li>
+         <label>
+            <input type="radio" name="q4" value="d">
+            Transitive Dependency
+         </label>
+      </li>
+   </ul>
+</div>
+
+<button type="button" class="btn check-answers">Check Answers</button>
+</form>
+</div>
+
+<div class="case-study fade-in">
+   <h3>Case Study: University Management System</h3>
+   <p>Apply your knowledge of advanced ER concepts to analyze this university system:</p>
+   <div class="image-container">
+      <img src="/api/placeholder/650/450" alt="University ER Model">
+      <p class="image-caption">Advanced ER model for a university management system</p>
+   </div>
+   <p>Notice how this diagram incorporates:</p>
+   <ul>
+      <li>Inheritance (Person → Student, Faculty)</li>
+      <li>Aggregation (Department consists of Faculty)</li>
+      <li>Total and partial participation constraints</li>
+      <li>Complex relationships with attributes</li>
+   </ul>
+   <div class="discussion-prompt">
+      <h4>Think About It</h4>
+      <p>How would you modify this diagram to include the concept of Research Projects where faculty members from different departments can collaborate?</p>
+   </div>
+</div>
+
+<div class="lesson-nav">
+   <button class="lesson-nav-btn" data-next="lesson3">
+      <i class="fas fa-arrow-left"></i>
+      Previous Lesson
+   </button>
+   <button class="lesson-nav-btn next" data-next="lesson5">
+      Next Lesson
+      <i class="fas fa-arrow-right"></i>
+   </button>
+</div>
+</div>
+
+<!-- Lesson 5: ER to Relational -->
+<div class="lesson" id="lesson5">
+   <div class="lesson-header">
+      <h2>Converting ER Models to Relational Schema</h2>
+      <div class="progress-container">
+         <div class="progress-bar">
+            <div class="progress" style="width: 100%;"></div>
+         </div>
+         <span>Lesson 5 of 5</span>
+      </div>
+   </div>
+   
+   <div class="lesson-section">
+      <h3>Why Convert ER to Relational?</h3>
+      <p>The Entity-Relationship model provides a conceptual design of the database, but most database systems implement the relational model. Converting an ER diagram to a relational schema is a critical step in database implementation.</p>
+      
+      <div class="note-box">
+         <p><strong>Note:</strong> Relational databases store data in tables with rows and columns, where each table represents an entity or relationship from the ER model.</p>
+      </div>
+   </div>
+   
+   <div class="lesson-section">
+      <h3>Basic Mapping Rules</h3>
+      <p>Follow these rules to convert your ER diagram to a relational schema:</p>
+      
+      <div class="mapping-rules">
+         <div class="rule-card fade-in">
+            <h4>1. Regular Entity Types</h4>
+            <p>Create a relation (table) for each regular entity type.</p>
+            <ul>
+               <li>The primary key of the entity becomes the primary key of the relation</li>
+               <li>All simple attributes become attributes (columns) of the relation</li>
+               <li>For composite attributes, include only their simple components</li>
+            </ul>
+            <div class="example-snippet">
+               <p><strong>Example:</strong> Student entity with attributes (StudentID, Name, Address) becomes:</p>
+               <code>Student(<u>StudentID</u>, FirstName, LastName, Street, City, State, ZipCode)</code>
+            </div>
+         </div>
+         
+         <div class="rule-card fade-in">
+            <h4>2. Weak Entity Types</h4>
+            <p>Create a relation for each weak entity type:</p>
+            <ul>
+               <li>Include all attributes of the weak entity</li>
+               <li>Include the primary key of the identifying (owner) entity as a foreign key</li>
+               <li>The primary key is a combination of the owner's primary key and the weak entity's partial key</li>
+            </ul>
+            <div class="example-snippet">
+               <p><strong>Example:</strong> Dependent weak entity related to Employee becomes:</p>
+               <code>Dependent(<u>EmployeeID</u>, <u>DependentName</u>, Relationship, BirthDate)</code>
+               <p>where EmployeeID is a foreign key referencing Employee</p>
+            </div>
+         </div>
+         
+         <div class="rule-card fade-in">
+            <h4>3. Binary 1:1 Relationships</h4>
+            <p>Choose one of the related entities and include the primary key of the other as a foreign key:</p>
+            <ul>
+               <li>Prefer including the foreign key in the entity with total participation</li>
+               <li>Include all attributes of the relationship as attributes of the relation</li>
+            </ul>
+            <div class="example-snippet">
+               <p><strong>Example:</strong> Person and Passport with 1:1 relationship becomes:</p>
+               <code>Person(<u>PersonID</u>, Name, ...)</code>
+               <code>Passport(<u>PassportNumber</u>, IssueDate, ExpiryDate, PersonID)</code>
+               <p>where PersonID in Passport references Person</p>
+            </div>
+         </div>
+         
+         <div class="rule-card fade-in">
+            <h4>4. Binary 1:N Relationships</h4>
+            <p>Include the primary key of the entity on the "one" side as a foreign key in the relation for the entity on the "many" side:</p>
+            <ul>
+               <li>Include all attributes of the relationship in the "many" side relation</li>
+            </ul>
+            <div class="example-snippet">
+               <p><strong>Example:</strong> Department and Employee with 1:N relationship becomes:</p>
+               <code>Department(<u>DeptID</u>, DeptName, Location, ...)</code>
+               <code>Employee(<u>EmployeeID</u>, Name, Salary, DeptID, ...)</code>
+               <p>where DeptID in Employee references Department</p>
+            </div>
+         </div>
+         
+         <div class="rule-card fade-in">
+            <h4>5. Binary M:N Relationships</h4>
+            <p>Create a new relation for the relationship:</p>
+            <ul>
+               <li>Include the primary keys of both participating entities as foreign keys</li>
+               <li>The combination of these foreign keys forms the primary key of the new relation</li>
+               <li>Include all attributes of the relationship</li>
+            </ul>
+            <div class="example-snippet">
+               <p><strong>Example:</strong> Student and Course with M:N relationship "Enrolls" becomes:</p>
+               <code>Student(<u>StudentID</u>, Name, ...)</code>
+               <code>Course(<u>CourseID</u>, Title, Credits, ...)</code>
+               <code>Enrollment(<u>StudentID</u>, <u>CourseID</u>, EnrollmentDate, Grade)</code>
+               <p>where StudentID and CourseID reference Student and Course respectively</p>
+            </div>
+         </div>
+      </div>
+   </div>
+   
+   <div class="lesson-section">
+      <h3>Handling Advanced Concepts</h3>
+      
+      <div class="concept-mapping fade-in">
+         <h4>Mapping Specialization/Generalization</h4>
+         <p>There are multiple approaches to mapping inheritance hierarchies:</p>
+         
+         <div class="tabs-container">
+            <div class="tab-buttons">
+               <button class="tab-btn active" data-tab="option1">Single Table</button>
+               <button class="tab-btn" data-tab="option2">Table Per Entity</button>
+               <button class="tab-btn" data-tab="option3">Table Per Subclass</button>
+            </div>
+            
+            <div class="tab-content active" id="option1">
+               <h5>Single Table Approach</h5>
+               <p>Create one table for the entire hierarchy with all attributes and a discriminator column:</p>
+               <div class="image-container">
+                  <img src="/api/placeholder/500/200" alt="Single Table Approach">
+                  <p class="image-caption">Single table for Person, Employee, and Customer</p>
+               </div>
+               <code>Person(<u>PersonID</u>, Name, Address, PersonType, EmployeeID, Salary, Department, CustomerID, CreditLimit, CustomerType)</code>
+               <p><strong>Pros:</strong> Simple, good performance for queries across the hierarchy</p>
+               <p><strong>Cons:</strong> Many null values, potential for large tables</p>
+            </div>
+            
+            <div class="tab-content" id="option2">
+               <h5>Table Per Entity Approach</h5>
+               <p>Create separate tables for the superclass and each subclass with appropriate references:</p>
+               <div class="image-container">
+                  <img src="/api/placeholder/500/200" alt="Table Per Entity Approach">
+                  <p class="image-caption">Separate tables with foreign keys</p>
+               </div>
+               <code>Person(<u>PersonID</u>, Name, Address)</code>
+               <code>Employee(<u>EmployeeID</u>, PersonID, Salary, Department)</code>
+               <code>Customer(<u>CustomerID</u>, PersonID, CreditLimit, CustomerType)</code>
+               <p><strong>Pros:</strong> No null values, normalized structure</p>
+               <p><strong>Cons:</strong> Requires joins for complete entity data</p>
+            </div>
+            
+            <div class="tab-content" id="option3">
+               <h5>Table Per Subclass Approach</h5>
+               <p>Create a separate table for each subclass with all attributes (including inherited ones):</p>
+               <div class="image-container">
+                  <img src="/api/placeholder/500/200" alt="Table Per Subclass Approach">
+                  <p class="image-caption">Separate tables with duplicated attributes</p>
+               </div>
+               <code>Employee(<u>PersonID</u>, Name, Address, EmployeeID, Salary, Department)</code>
+               <code>Customer(<u>PersonID</u>, Name, Address, CustomerID, CreditLimit, CustomerType)</code>
+               <p><strong>Pros:</strong> Good query performance for specific subclasses</p>
+               <p><strong>Cons:</strong> Data redundancy, update anomalies</p>
+            </div>
+         </div>
+      </div>
+   </div>
+   
+   <div class="interactive-exercise fade-in">
+      <h3>ER to Relational Conversion Exercise</h3>
+      <p>Convert the following ER diagram to a relational schema:</p>
+      <div class="image-container">
+         <img src="/api/placeholder/600/400" alt="Library ER Diagram">
+         <p class="image-caption">Library system ER diagram from Lesson 3</p>
+      </div>
+      
+      <button class="btn show-solution">Show Solution</button>
+      <div class="solution-container" style="display: none;">
+         <h4>Relational Schema Solution:</h4>
+         <div class="code-block">
+            <code>Book(<u>BookID</u>, Title, ISBN, PublicationYear)</code>
+            <code>Author(<u>AuthorID</u>, Name, Nationality)</code>
+            <code>Borrower(<u>BorrowerID</u>, Name, Address, Phone)</code>
+            <code>BookAuthor(<u>BookID</u>, <u>AuthorID</u>)</code>
+            <code>BookLoan(<u>BookID</u>, <u>LoanDate</u>, BorrowerID, DueDate, ReturnDate)</code>
+         </div>
+         <p><strong>Explanation:</strong></p>
+         <ul>
+            <li>Regular entities (Book, Author, Borrower) become tables with their attributes</li>
+            <li>M:N relationship between Book and Author becomes BookAuthor junction table</li>
+            <li>1:N relationship between Borrower and Book becomes BookLoan with relationship attributes</li>
+            <li>Primary keys are underlined, foreign keys reference their parent tables</li>
+         </ul>
+      </div>
+   </div>
+   
+   <div class="final-quiz fade-in">
+      <h3>Final Knowledge Check</h3>
+      <form class="final-quiz-form">
+         <div class="quiz-question">
+            <p>What is the most appropriate way to map a many-to-many relationship to a relational schema?</p>
+            <ul class="quiz-options">
+               <li>
+                  <label>
+                     <input type="radio" name="q5" value="a">
+                     Include a foreign key in one of the tables
+                  </label>
+               </li>
+               <li>
+                  <label>
+                     <input type="radio" name="q5" value="b">
+                     Create a third table (junction table) with foreign keys to both tables
+                  </label>
+               </li>
+               <li>
+                  <label>
+                     <input type="radio" name="q5" value="c">
+                     Include foreign keys in both tables
+                  </label>
+               </li>
+               <li>
+                  <label>
+                     <input type="radio" name="q5" value="d">
+                     Create a single table for all entities
+                  </label>
+               </li>
+            </ul>
+         </div>
+         
+         <div class="quiz-question">
+            <p>When mapping a weak entity to a relational schema, what is true about its primary key?</p>
+            <ul class="quiz-options">
+               <li>
+                  <label>
+                     <input type="radio" name="q6" value="a">
+                     It has no primary key
+                  </label>
+               </li>
+               <li>
+                  <label>
+                     <input type="radio" name="q6" value="b">
+                     It has an auto-generated primary key
+                  </label>
+               </li>
+               <li>
+                  <label>
+                     <input type="radio" name="q6" value="c">
+                     Its primary key includes the primary key of the owner entity plus its own partial key
+                  </label>
+               </li>
+               <li>
+                  <label>
+                     <input type="radio" name="q6" value="d">
+                     Its primary key is only the foreign key to the owner entity
+                  </label>
+               </li>
+            </ul>
+         </div>
+         
+         <button type="button" class="btn check-answers">Check Answers</button>
+      </form>
+   </div>
+   
+   <div class="course-completion fade-in">
+      <div class="completion-badge">
+         <i class="fas fa-award"></i>
+         <h3>Congratulations!</h3>
+         <p>You've completed the Entity Relationship Model course</p>
+      </div>
+      <div class="next-steps">
+         <h4>Next Steps</h4>
+         <ul>
+            <li>Apply your knowledge by designing your own database</li>
+            <li>Move on to our SQL Fundamentals course</li>
+            <li>Explore advanced database topics like Normalization</li>
+         </ul>
+         <!-- <div class="cta-buttons">
+            <a href="#" class="btn">Get Certificate</a>
+            <a href="index.html#learning-paths" class="btn btn-outline">More Courses</a>
+         </div> -->
+      </div>
+   </div>
+   
+   <div class="lesson-nav">
+      <button class="lesson-nav-btn" data-next="lesson4">
+         <i class="fas fa-arrow-left"></i>
+         Previous Lesson
+      </button>
+      <button class="lesson-nav-btn disabled">
+         Next Lesson
+         <i class="fas fa-arrow-right"></i>
+      </button>
+   </div>
+</div>
