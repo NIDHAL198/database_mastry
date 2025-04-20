@@ -1364,6 +1364,9 @@
    }
 
    @media (max-width: 576px) {
+      .course-navigation{
+         display: none;
+      }
       .course-nav-container {
          flex-direction: column;
          gap: 0.5rem;
